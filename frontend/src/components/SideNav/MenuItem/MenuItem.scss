@@ -1,0 +1,28 @@
+.menu-item {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #DADDE1;
+    }
+
+    span {
+        margin: 0 0.7rem;
+        color: #444950;
+        overflow: hidden;
+
+        svg {
+            // The svg width and height was overwritten by me
+            // color: #FA383E;
+
+            &.svg-inline--fa {
+                width: 1.3rem;
+                height: 1.3rem;
+            }
+        }
+    }
+}
