@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
-import Header from './components/Header/Header';
+// import Header from './components/Header/Header';
 import Homepage from './components/Homepage/Homepage';
 
 class App extends Component {
@@ -9,7 +9,6 @@ class App extends Component {
       <div className="App">
         {/* <Header /> */}
         <Homepage />
-        
       </div>
     );
   }
