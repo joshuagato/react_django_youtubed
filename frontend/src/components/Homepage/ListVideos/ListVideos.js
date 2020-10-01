@@ -29,7 +29,7 @@ class ListVideos extends Component {
             {this.state.myArray.map(iteration => <ListVideo key={iteration} watch={this.watchHandler} vidImg={pp} alt="hello" userImg={pp} desc={desc} username={usnm}  views={89} age={10} />)}
           </section>
 
-          <section className="trending-section  add-margin">
+          <section className="trending-section add-margin">
             <div className="heading">
               <h4>Trending</h4>
             </div>
