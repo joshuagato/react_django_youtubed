@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './WatchVideos.scss';
 
-import pp from '../../assets/vidImages/pp.jpg';
+import pp from './../../../../static/assets/images/pp.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
@@ -45,7 +45,7 @@ class WatchVideos extends Component {
                     <section className="profile-section">
                         <div className="profile-details">
                             <article className="profile-pic">
-                                <img src={pp} alt="" />
+                                <img src={'./../../../../static/assets/images/pp.jpg'} alt="" />
                             </article>
                             <article className="profile">
                                 <span className="name">Clement Mihailescu</span>

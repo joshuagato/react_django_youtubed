@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Header.scss';
 
 import { withRouter } from 'react-router-dom';
@@ -11,11 +12,6 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faSearch, faUpload, faSignInAlt, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 export class Header extends Component {
-
-  homeHandler = () => {
-    this.props.history.push('/');
-  }
-
   render() {
     return (
       <div className="header-div">
@@ -23,9 +19,9 @@ export class Header extends Component {
           <div onClick={this.props.showhide} title="Double click to show/hide sidebar" className="menu">
             <FontAwesomeIcon icon={faBars} />
           </div>
-          <div onClick={this.homeHandler} className="icon">
+          <NavLink to='/' className="icon">
             <FontAwesomeIcon icon={faYoutube} />
-          </div>
+          </NavLink>
         </div>
         <div className="search-bar">
           <input type="search" placeholder="Search" />

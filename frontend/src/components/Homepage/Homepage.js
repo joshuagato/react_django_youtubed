@@ -3,15 +3,15 @@ import './Homepage.scss';
 
 import { Switch, Route } from 'react-router-dom';
 
-import Header from '../Header/Header';
-import SideNav from '../SideNav/SideNav';
+import Header from '../FixedComponents/Header/Header';
+import SideNav from '../FixedComponents/SideNav/SideNav';
 import ListVideos from './ListVideos/ListVideos';
 import WatchVideos from './WatchVideos/WatchVideos';
 
 class Homepage extends Component {
 
   state = {
-    shown: false
+    shown: true
   }
 
   menuHandler = () => {

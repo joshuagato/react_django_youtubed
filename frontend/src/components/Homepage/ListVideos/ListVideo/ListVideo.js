@@ -6,11 +6,11 @@ const ListVideo = props => {
     <div className="list-video">
       <section onClick={props.watch} className="list-videos-upper-section">
         <div className="video">
-          <img src={props.vidImg} alt={props.alt} />
+          <img src={'./../../../../../static/assets/images/pp.jpg'} alt={props.alt} />
           <span className="duration">{props.duration}</span>
         </div>
         <div className="description">
-          <img src={props.userImg} alt="" />
+          <img src={'./../../../../../static/assets/images/pp.jpg'} alt={props.alt} />
           <span className="desc-text">{props.desc}</span>
         </div>
       </section>
